@@ -40,4 +40,10 @@ for _ in range(N):
 8. list.insert(pos, ele) 순서
 9. del list[i], list.remove(e) 차이점 확실히 구분해두기
 
+10. list의 범주를 벗어나지만 훌륭한 해결법을 하나 찾았는데,
+getattr(s, method)(*parameters)를 활용하면 dict가 필요 없다.
+getattr(object, method/variable)은 어떤 object의 method/varaible str 이름을 주면 그것을 실제로 호출해준다.
+일종의 str -> method/variable type converter 같은 느낌?
+신선한 충격.
+
 """
